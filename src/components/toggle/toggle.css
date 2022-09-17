@@ -39,7 +39,7 @@ img {
   .t {
     position: fixed;
     right: 20px;
-    top: 10px;
+    top: 20px;
     max-height: 15px;
     width: 30px;
     border-radius: 15px;
@@ -50,8 +50,8 @@ img {
   }
 
   img {
-    height: 10px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     object-fit: contain;
   }
 
