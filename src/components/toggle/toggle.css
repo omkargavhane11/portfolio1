@@ -1,0 +1,67 @@
+.t {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  height: 22px;
+  width: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  border: 2px solid gray;
+}
+
+img {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+}
+
+.sun {
+  border-radius: 25px 0 0 25px;
+}
+
+.moon {
+  border-radius: 0 25px 25px 0;
+}
+
+.t-btn {
+  background-color: #999;
+  border-radius: 50%;
+  height: 27px;
+  width: 27px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 430px) {
+  .t {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    max-height: 15px;
+    width: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    border: 2px solid gray;
+  }
+
+  img {
+    height: 10px;
+    width: 20px;
+    object-fit: contain;
+  }
+
+  .t-btn {
+    background-color: #999;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+}

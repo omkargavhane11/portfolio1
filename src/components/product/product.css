@@ -1,0 +1,43 @@
+.p {
+  width: 30%;
+  height: 25vh;
+  margin: 20px 10px;
+  border: 2px solid rgb(168, 168, 168);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.p-browser {
+  height: 20px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-left: 10px;
+  background-color: rgb(168, 168, 168);
+}
+
+.p-circle {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.p-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 480px) {
+  .p {
+    width: 45%;
+    height: 15vh;
+    margin: 10px 5px;
+    border: 2px solid rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+}
