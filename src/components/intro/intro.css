@@ -88,6 +88,10 @@
     flex-direction: column;
     justify-content: center;
   }
+  .i-name {
+    font-size: 40px;
+    font-weight: 600;
+  }
   .i-desc {
     display: none;
   }

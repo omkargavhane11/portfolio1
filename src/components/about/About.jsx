@@ -14,23 +14,17 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
         <p className="sub">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ad
-          impedit laborum, temporibus cumque, enim ipsum, possimus minima
-          necessitatibus accusamus modi voluptates consectetur id! Voluptatibus
-          repudiandae soluta ullam molestiae? Ut!
+          I have switched my career trajectory from Mechnical Engg. to Full
+          Stack Web Developement.
         </p>
         <p className="a-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime
-          officiis maiores reiciendis praesentium esse suscipit fugit iure
-          doloribus eligendi nostrum unde, dolor impedit minus possimus minima
-          repellendus placeat deleniti. Beatae iusto itaque quibusdam. Neque
-          exercitationem reiciendis ea voluptatem totam illo eos repudiandae
-          excepturi. Distinctio deserunt vel quis maxime, rerum suscipit quidem
-          nihil porro, odio, accusamus nesciunt ducimus aliquam neque! Adipisci,
-          at expedita voluptate vero, modi veniam tempore nam eveniet suscipit
-          necessitatibus nobis nemo aperiam dolorum. Nam similique, omnis
-          tenetur tempora asperiores tempore sequi ipsa aspernatur, amet ut
-          nulla repellat.
+          I look forward to work with the best talents in the industry. I will
+          do so by upskilling myself to the skill level which industry demands.
+          For what I can do as of now is just the tip of the iceberg. I am sure
+          that whatever shortcomings I have from skills standpoint, I will
+          overcome that very quickly. I am a passionate person who takes his
+          work very seriously. I am someone who tries to build the trust about
+          my skill through delivering the quality work.
         </p>
       </div>
     </div>
