@@ -1,6 +1,15 @@
 import "./about.css";
 import red from "../../images/red.png";
 import formal from "../../images/formal.png";
+import dp_bg from "../../images/dp_1.png";
+import html from "../../images/html_logo.png";
+import css from "../../images/css_logo.jfif";
+import javascript from "../../images/js_logo.png";
+import react from "../../images/react_logo.jpg";
+import redux from "../../images/redux_logo.png";
+import bootstrap from "../../images/bootstrap_logo.jpg";
+import mui from "../../images/mui_logo.png";
+import s3 from "../../images/aws-s3_logo.png";
 
 const About = () => {
   return (
@@ -8,7 +17,7 @@ const About = () => {
       <div className="a-left">
         <div className="a-card">
           <div className="a-card bg"></div>
-          <img src={red} alt="" className="a-img" />
+          <img src={dp_bg} alt="" className="a-img" />
         </div>
       </div>
       <div className="a-right">
@@ -26,6 +35,21 @@ const About = () => {
           work very seriously. I am someone who tries to build the trust about
           my skill through delivering the quality work.
         </p>
+        <div className="techstack">
+          <h1 className="techstack_heading">
+            Knowledge of Tools and Frameworks
+          </h1>
+          <div className="tech_items">
+            <img src={html} alt="" className="tech_item" />
+            <img src={css} alt="" className="tech_item" />
+            <img src={javascript} alt="" className="tech_item" />
+            <img src={react} alt="" className="tech_item" />
+            <img src={redux} alt="" className="tech_item" />
+            <img src={bootstrap} alt="" className="tech_item" />
+            <img src={mui} alt="" className="tech_item" />
+            <img src={s3} alt="" className="tech_item" />
+          </div>
+        </div>
       </div>
     </div>
   );

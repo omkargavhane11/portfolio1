@@ -1,5 +1,6 @@
 import "./intro.css";
 import Pic from "../../images/dp_omkar.png";
+import dp_bg from "../../images/dp_1.png";
 
 const Intro = () => {
   return (

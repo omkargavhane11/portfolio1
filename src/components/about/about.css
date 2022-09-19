@@ -64,6 +64,24 @@
   z-index: 10;
 }
 
+.techstack_heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tech_items {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.tech_item {
+  height: 60px;
+  width: 60px;
+  background: transparent;
+}
+
 @media screen and (max-width: 480px) {
   .a {
     flex-direction: column;
