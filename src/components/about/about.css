@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: flex;
   gap: 0px;
+  max-height: max-content;
 }
 
 .a-title {
@@ -65,6 +66,8 @@
 }
 
 .techstack_heading {
+  height: max-content;
+  padding: 20px 0px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -73,7 +76,7 @@
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  padding: 20px 0px;
+  margin-bottom: 30px;
 }
 
 .tech_item {
