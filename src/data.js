@@ -5,11 +5,12 @@ export const products = [
     {
         id: 1,
         img: fb,
+        link: "https://myticket77.netlify.app"
     },
     {
         id: 2,
-        img: gmail,
-        link: "http://lama.dev",
+        img: fb,
+        link: "https://smartbuy.netlify.app",
     },
     {
         id: 3,

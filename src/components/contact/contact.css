@@ -1,11 +1,11 @@
 .c {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
 .c-bg {
   background-color: rgb(72, 181, 77);
-  height: 100vh;
+  min-height: 100vh;
   width: 20px;
   position: absolute;
 }
@@ -50,7 +50,7 @@
 .c-info-item > img {
   height: 30px;
   width: 30px;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .c-contact {
@@ -90,6 +90,7 @@ textarea {
   .c-wrapper {
     flex-direction: column;
     padding: 0px;
+    min-height: 90vh;
   }
 
   .c-title {
@@ -123,6 +124,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px 0px;
   }
 
   .c-contact {
@@ -146,5 +148,12 @@ textarea {
     margin-bottom: 5px;
     width: 85%;
     font-size: 14px;
+  }
+
+  .c-bg {
+    background-color: rgb(72, 181, 77);
+    min-height: 110vh;
+    width: 20px;
+    position: absolute;
   }
 }

@@ -11,7 +11,7 @@ function App() {
   const darkMode = theme.state.darkMode;
   console.log(theme, darkMode);
   return (
-    <div className="App" style={{ backgroundColor: darkMode ? "#222" : "white", color: darkMode ? "white" : "black", display: "flex", flexDirection: "column" }}>
+    <div className="App" style={{ backgroundColor: darkMode ? "#222" : "white", color: darkMode ? "white" : "black", display: "flex", flexDirection: "column", gap: "0px" }}>
       <Toggle />
       <Intro />
       <About />

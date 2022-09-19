@@ -37,7 +37,7 @@ const About = () => {
         </p>
         <div className="techstack">
           <h1 className="techstack_heading">
-            Knowledge of Tools and Frameworks
+            Knowledge of Languages,Technologies and Frameworks
           </h1>
           <div className="tech_items">
             <img src={html} alt="" className="tech_item" />

@@ -12,14 +12,25 @@ const Toggle = () => {
   };
 
   return (
-    <div className="t">
+    <div
+      className="t"
+      style={{
+        backgroundColor: theme.state.darkMode
+          ? "rgb(154, 177, 192)"
+          : "lightgray",
+        border: theme.state.darkMode
+          ? "rgb(154, 177, 192)"
+          : "1px solid lightgray",
+      }}
+    >
       <img src={sun} alt="" className="sun" />
       <img src={moon} alt="" className="moon" />
       <div
         className="t-btn"
         onClick={handleClick}
         style={{
-          left: theme.state.darkMode ? "0px" : "50%",
+          left: theme.state.darkMode ? "50%" : "-2px",
+          backgroundColor: theme.state.darkMode ? "rgb(43, 133, 193)" : "gray",
           // right: theme.state.darkMode === false && "0px",
         }}
       ></div>
