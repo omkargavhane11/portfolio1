@@ -7,10 +7,5 @@ export const products = [
         img: web,
         link: "https://smartbuy.netlify.app/"
     },
-    {
-        id: 186868,
-        img: web,
-        link: "https://smartbuy.netlify.app/"
-    },
 
 ];

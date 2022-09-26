@@ -27,30 +27,31 @@ const Contact = () => {
     // }
 
     e.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     "service_7jqb24r",
-    //     "template_t26ubhn",
-    //     formRef.current,
-    //     "lyZGPaZXRsmWLyAOx"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
-    // toast({
-    //   // title: 'CSuccessfully.',
-    //   description: "Contact request has been sent successfully",
-    //   status: "success",
-    //   duration: 4000,
-    //   isClosable: true,
-    //   position: "top",
-    // });
-    console.log(darkMode);
+    emailjs
+      .sendForm(
+        "service_7jqb24r",
+        "template_t26ubhn",
+        formRef.current,
+        "lyZGPaZXRsmWLyAOx"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    toast({
+      // title: 'CSuccessfully.',
+      description:
+        "Contact service is currently down. Please contact thorugh email or contact number. Thank You",
+      status: "info",
+      // duration: 4000,
+      isClosable: true,
+      position: "top",
+    });
+    // console.log(darkMode);
   };
 
   console.log(process.env.SERVICE_ID);
