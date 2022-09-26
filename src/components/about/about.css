@@ -81,9 +81,11 @@
 }
 
 .tech_item {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   background: transparent;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 480px) {
@@ -108,5 +110,13 @@
     align-items: left;
     justify-content: center;
     height: max-content;
+  }
+
+  .tech_item {
+    height: 35px;
+    width: 35px;
+    background: transparent;
+    object-fit: cover;
+    border-radius: 5px;
   }
 }

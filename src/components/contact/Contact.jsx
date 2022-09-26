@@ -6,8 +6,13 @@ import linkedin from "../../images/linkedIn.png";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
+import { ThemeContext } from "../../context";
+import { useContext } from "react";
 
 const Contact = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   const user_name = useRef("");
   const user_email = useRef("");
   const user_subject = useRef("");
@@ -45,7 +50,7 @@ const Contact = () => {
     //   isClosable: true,
     //   position: "top",
     // });
-    console.log(user_name.current.value);
+    console.log(darkMode);
   };
 
   console.log(process.env.SERVICE_ID);
