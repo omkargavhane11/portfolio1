@@ -1,35 +1,11 @@
 import gmail from "../src/images/gmail_snap.PNG";
-import fb from "../src/images/fb_snap.PNG";
+import web from "../src/images/web.PNG";
 
 export const products = [
     {
-        id: 1,
-        img: fb,
-        link: "https://myticket77.netlify.app"
+        id: 186868,
+        img: web,
+        link: "https://smartbuy.netlify.app/"
     },
-    {
-        id: 2,
-        img: fb,
-        link: "https://smartbuy.netlify.app",
-    },
-    {
-        id: 3,
-        img: gmail,
-        link: "http://lama.dev",
-    },
-    {
-        id: 4,
-        img: gmail,
-        link: "http://lama.dev",
-    },
-    {
-        id: 5,
-        img: gmail,
-        link: "http://lama.dev",
-    },
-    {
-        id: 6,
-        img: gmail,
-        link: "http://lama.dev",
-    },
+
 ];
