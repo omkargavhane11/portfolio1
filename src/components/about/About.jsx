@@ -10,6 +10,8 @@ import redux from "../../images/redux_logo.png";
 import bootstrap from "../../images/bootstrap_logo.jpg";
 import mui from "../../images/mui_logo.png";
 import s3 from "../../images/aws-s3_logo.png";
+import socket from "../../images/socket.png";
+import nodejs from "../../images/nodejs.png";
 
 const About = () => {
   return (
@@ -48,6 +50,8 @@ const About = () => {
             <img src={bootstrap} alt="" className="tech_item" />
             <img src={mui} alt="" className="tech_item" />
             <img src={s3} alt="" className="tech_item" />
+            <img src={socket} alt="" className="tech_item" />
+            <img src={nodejs} alt="" className="tech_item" />
           </div>
         </div>
       </div>
