@@ -12,11 +12,16 @@ import mui from "../../images/mui_logo.png";
 import s3 from "../../images/aws-s3_logo.png";
 import chakraui from "../../images/chakra-ui.png";
 import nodejs from "../../images/nodejs.png";
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 const Product = ({ item }) => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <a href={item.link} target="_blank" rel="noreferrer">
-      <div className="p">
+      <div className={darkMode ? "p dark" : "p"}>
         <div className="p-top"></div>
         <div className="p-bottom">
           <div className="p-project">
@@ -45,7 +50,7 @@ const Product = ({ item }) => {
                   <img src={chakraui} alt="" className="stack_item" />
                   <img src={mui} alt="" className="stack_item" />
                   <img src={s3} alt="" className="stack_item" />
-                  <img src={nodejs} alt="" className="tech_item" />
+                  <img src={nodejs} alt="" className="stack_item" />
                 </div>
               </div>
             </div>

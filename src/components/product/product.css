@@ -8,17 +8,22 @@
   padding: 0px;
   height: 380px;
   padding: 10px;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-/* .p-browser {
-  height: 20px;
+/* .p.dark {
+  width: 100%;
+  margin: 20px 0px;
   display: flex;
-  gap: 5px;
-  align-items: center;
-  padding-left: 10px;
-  background-color: rgb(168, 168, 168);
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+  padding: 0px;
+  height: 380px;
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 } */
 
 .p-circle {
@@ -94,16 +99,29 @@
 
 @media screen and (max-width: 480px) {
   .p {
-    max-width: 90%;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0px;
-    height: auto;
+    height: max-content;
     padding: 10px;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
       rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    margin: 20px auto 40px;
+  }
+
+  .p.dark {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    height: max-content;
+    padding: 10px;
+    box-shadow: rgba(146, 121, 121, 0.24) 0px 3px 8px;
   }
 
   /* .p-browser {
@@ -135,7 +153,6 @@
   .p--detail {
     flex: 0.8;
     display: flex;
-
     margin: 0px;
     padding: 0px 0px;
     align-items: center;
@@ -157,12 +174,15 @@
     height: max-content;
     width: 100%;
     object-fit: contain;
-    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
     height: 200px;
   }
 
   .p--desc-desc {
     text-align: left;
+  }
+
+  .p--desc-name {
+    color: rgb(124, 124, 124);
   }
 
   .p--desc-name--value {
@@ -171,18 +191,22 @@
 
   .p--links {
     margin: auto 0px;
+    text-align: left;
+    margin: 10px 0px;
+    color: rgb(138, 138, 138);
   }
 
   .stack-items {
-    margin: 20px;
+    margin: 10px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     flex-wrap: wrap;
   }
   .stack_item {
     height: 20px;
     width: 20px;
+    border-radius: 5px;
     background: transparent;
   }
 }
