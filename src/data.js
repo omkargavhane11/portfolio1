@@ -28,15 +28,15 @@ export const products = [
         description: "All features of modern day e-comm are included excluding payment integration. Shop wide range of products.",
         stack: [html, css, javascript, react, nodejs, s3, redux]
     },
-    {
-        id: "vnsvi7syh9879",
-        img: "https://deliveryb29we.s3.amazonaws.com/display_image.PNG",
-        link: "https://whatssup.netlify.app/",
-        github: "",
-        name: "Chat application",
-        description: "Connect with your friends, family and loved one's by adding their contact number and chat in real time",
-        stack: [html, css, javascript, react, nodejs, socket]
-    },
+    // {
+    //     id: "vnsvi7syh9879",
+    //     img: "https://deliveryb29we.s3.amazonaws.com/display_image.PNG",
+    //     link: "https://whatssup.netlify.app/",
+    //     github: "",
+    //     name: "Chat application",
+    //     description: "Connect with your friends, family and loved one's by adding their contact number and chat in real time",
+    //     stack: [html, css, javascript, react, nodejs, socket]
+    // },
 
 ];
 
