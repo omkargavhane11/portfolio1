@@ -85,7 +85,7 @@
   border-bottom: 1px solid gray;
   margin-bottom: 5px;
   font-size: 16px;
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   padding: 5px;
   background-color: transparent;
 }
@@ -116,6 +116,19 @@
   font-size: 18px;
   cursor: pointer;
 }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 @media screen and (max-width: 480px) {
   .c-wrapper {
@@ -176,7 +189,7 @@
   }
 
   .c-contact > input {
-    width: 85%;
+    width: 100%;
     height: 40px;
     border: none;
     border-bottom: 1px solid gray;
@@ -187,25 +200,25 @@
   }
 
   .c-contact-dark > input {
-    width: 85%;
+    width: 100%;
     height: 40px;
     border: none;
     border-bottom: 1px solid gray;
     margin-bottom: 5px;
     font-size: 16px;
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
     padding: 5px;
   }
 
   .c-contact > textarea {
     margin-bottom: 5px;
-    width: 85%;
+    width: 100%;
     font-size: 14px;
   }
 
   .c-contact-dark > textarea {
     margin-bottom: 5px;
-    width: 85%;
+    width: 100%;
     font-size: 14px;
   }
 

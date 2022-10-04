@@ -1,8 +1,9 @@
 import "./contact.css";
-import phone from "../../images/phone.jpg";
-import address from "../../images/address.png";
-import email from "../../images/email.png";
-import linkedin from "../../images/linkedIn.png";
+import CallIcon from "@mui/icons-material/Call";
+import HomeIcon from "@mui/icons-material/Home";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+//
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
@@ -22,39 +23,74 @@ const Contact = () => {
   const formRef = useRef();
 
   const handleSubmit = (e) => {
-    // const payload = {
-    //   user_name:
+    e.preventDefault();
+
+    let name = user_name.current.value;
+    let email = user_email.current.value;
+    let subject = user_subject.current;
+    let msg = message.current.value;
+
+    // console.log(email);
+    // if (email && name && msg && subject !== (null || "")) {
+    //   console.log("sent");
+    // } else {
+    //   console.log("not sent");
     // }
 
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_7jqb24r",
-        "template_t26ubhn",
-        formRef.current,
-        "lyZGPaZXRsmWLyAOx"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    toast({
-      // title: 'CSuccessfully.',
-      description:
-        "Contact service is currently down. Please contact thorugh email or contact number. Thank You",
-      status: "info",
-      // duration: 4000,
-      isClosable: true,
-      position: "top",
-    });
-    // console.log(darkMode);
+    if (email && name && msg && subject !== (null || "")) {
+      emailjs
+        .sendForm(
+          "service_7jqb24r",
+          "template_t26ubhn",
+          formRef.current,
+          "lyZGPaZXRsmWLyAOx"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            toast({
+              description:
+                "Thank you for contacting. I'll reach out to you soon.",
+              status: "success",
+              duration: 3000,
+              isClosable: true,
+              position: "top",
+            });
+            user_name.current.value = null;
+            user_email.current.value = null;
+            user_subject.current.value = null;
+            message.current.value = null;
+          },
+          (error) => {
+            console.log(error.text);
+            toast({
+              description:
+                "Unable to contact. Please try directly through mobile number or email address.",
+              status: "error",
+              duration: 3000,
+              isClosable: true,
+              position: "top",
+            });
+            user_name.current.value = null;
+            user_email.current.value = null;
+            user_subject.current.value = null;
+            message.current.value = null;
+          }
+        );
+    } else {
+      toast({
+        description: "Please enter all details !",
+        status: "warning",
+        duration: 3000,
+        isClosable: true,
+        position: "top",
+      });
+      user_name.current.value = null;
+      user_email.current.value = null;
+      user_subject.current.value = null;
+      message.current.value = null;
+    }
   };
-
-  console.log(process.env.SERVICE_ID);
 
   return (
     <div className="c">
@@ -66,20 +102,20 @@ const Contact = () => {
         <div className="c-left">
           <div className="c-item">
             <div className="c-info-item">
-              <img src={phone} alt="" />
+              <CallIcon />
               <span>+91 9082732814</span>
             </div>
             <div className="c-info-item">
-              <img src={address} alt="" />
+              <HomeIcon />
               <span>Sanpada, Navi Mumbai, Maharashtra</span>
             </div>
             <div className="c-info-item">
-              <img src={email} alt="" />
+              <EmailIcon />
               <span>ogomkargavhane@gmail.com</span>
             </div>
           </div>
           <div className="c-info-item">
-            <img src={linkedin} alt="" />
+            <LinkedInIcon />
             <span>www.linkedin.com/in/omkar77</span>
           </div>
         </div>
@@ -98,13 +134,24 @@ const Contact = () => {
               placeholder="Name"
               name="user_name"
             />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <input type="email" placeholder="Email" name="user_email" />
+            <input
+              ref={user_subject}
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+            />
+            <input
+              ref={user_email}
+              type="email"
+              placeholder="Email"
+              name="user_email"
+            />
             <textarea
               type="text"
               rows="5"
               placeholder="Message"
               name="message"
+              ref={message}
             />
             <button type="submit" className="contact_btn">
               Contact
