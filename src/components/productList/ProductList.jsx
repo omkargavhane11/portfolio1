@@ -1,5 +1,5 @@
-import Product from "../product/Product";
 import "./productList.css";
+import Product from "../product/Product";
 import { products } from "../../data";
 
 const ProductList = () => {
@@ -7,10 +7,10 @@ const ProductList = () => {
     <div className="pl">
       <div className="pl-texts">
         {/* <h1 className="pl-title">Create & Inspire with your work</h1> */}
-        <h1 className="pl-title">Project</h1>
+        <h1 className="pl-title">Projects</h1>
         <p className="pl-desc">
-          Sample project to give an idea of my skill level. There is more than
-          this one project that I will add in coming weeks.
+          Sample projects to give an idea of my skill level. Don't judge me with
+          this work only, I have a lot more to offer 😎
         </p>
       </div>
       <div className="pl-list">

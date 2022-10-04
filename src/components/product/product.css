@@ -1,30 +1,33 @@
 .p {
-  width: 100%;
-  margin: 20px 0px;
+  max-width: 25vw;
+  min-width: 25vw;
+  margin: 0px 0px;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 0px;
-  padding: 0px;
-  height: 380px;
   padding: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 4px;
 }
 
-/* .p.dark {
-  width: 100%;
-  margin: 20px 0px;
+.p.dark {
+  max-width: 25vw;
+  min-width: 25vw;
+  margin: 0px 0px;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 0px;
-  padding: 0px;
-  height: 380px;
   padding: 10px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-} */
+  box-shadow: rgba(254, 254, 254, 0.24) 0px 0px 8px;
+  border-radius: 4px;
+}
 
 .p-circle {
   height: 5px;
@@ -36,6 +39,7 @@
 .p-bottom {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .p-project {
@@ -43,12 +47,13 @@
 }
 
 .p--detail {
-  flex: 0.8;
+  flex: 1;
   display: flex;
   margin: 0px;
   padding: 0px 0px;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .p--detail--wrapper {
@@ -56,22 +61,28 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  /* justify-content: space-between; */
   height: max-content;
-  padding: 0px 30px;
+  padding: 0px 0px;
   gap: 10px;
 }
 
 .p-img {
-  height: max-content;
+  max-height: 30vh;
+  min-height: 30vh;
   width: 100%;
   object-fit: contain;
-  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
-  height: 350px;
+  height: 200px;
+  width: 25vw;
 }
 
 .p--desc-desc {
   text-align: left;
+}
+
+.p--desc-name {
+  /* font-size: 14px; */
+  color: rgb(124, 124, 124);
+  /* margin-top: 5px; */
 }
 
 .p--desc-name--value {
@@ -80,10 +91,12 @@
 
 .p--links {
   margin: auto 0px;
+  text-align: left;
+  color: rgb(138, 138, 138);
 }
 
 .stack-items {
-  margin: 20px;
+  margin: 10px 0px;
   display: flex;
   justify-content: flex-start;
   gap: 10px;
@@ -92,14 +105,30 @@
 .stack_item {
   height: 30px;
   width: 30px;
+  border-radius: 8px;
   background: transparent;
-  border-radius: 10px;
-  object-fit: cover;
 }
 
-@media screen and (max-width: 480px) {
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+@media screen and (max-width: 400px) {
   .p {
-    max-width: 80%;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,13 +136,13 @@
     gap: 0px;
     height: max-content;
     padding: 10px;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-      rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     margin: 20px auto 40px;
+    border-radius: 4px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em;
   }
 
   .p.dark {
-    max-width: 80%;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,7 +150,9 @@
     gap: 0px;
     height: max-content;
     padding: 10px;
-    box-shadow: rgba(146, 121, 121, 0.24) 0px 3px 8px;
+    margin: 20px auto 40px;
+    border-radius: 4px;
+    box-shadow: rgba(254, 254, 254, 0.24) 0px 0px 8px;
   }
 
   /* .p-browser {
@@ -144,6 +175,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
   .p-project {
@@ -151,53 +183,57 @@
   }
 
   .p--detail {
-    flex: 0.8;
+    flex: 1;
     display: flex;
     margin: 0px;
     padding: 0px 0px;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 
   .p--detail--wrapper {
     width: 100%;
     display: flex;
-    /* align-items: flex-start; */
     flex-direction: column;
-    /* justify-content: space-between; */
     height: max-content;
-    padding: 0px 00px;
-    gap: 5px;
+    padding: 0px 0px;
+    gap: 0px;
   }
 
   .p-img {
-    height: max-content;
+    min-height: max-content;
     width: 100%;
+    max-height: 30vh;
     object-fit: contain;
-    height: 200px;
+    height: 100%;
   }
 
   .p--desc-desc {
     text-align: left;
+    display: block;
   }
 
   .p--desc-name {
+    font-size: 14px;
     color: rgb(124, 124, 124);
+    margin-top: 5px;
   }
 
   .p--desc-name--value {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .p--links {
     margin: auto 0px;
     text-align: left;
-    margin: 10px 0px;
+    margin: 0px;
     color: rgb(138, 138, 138);
+    font-size: 14px;
   }
 
   .stack-items {
-    margin: 10px 0px;
+    margin: 8px 0px;
     display: flex;
     justify-content: flex-start;
     gap: 10px;

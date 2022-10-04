@@ -35,12 +35,11 @@ const Product = ({ item }) => {
           <div className="p--detail">
             <div className="p--detail--wrapper">
               <div className="p--desc-name">Project type</div>
-              <div className="p--desc-name--value">e-commerce </div>
-              <div className="p--desc-desc">
-                All features of modern day e-comm are included.
-              </div>
+              <div className="p--desc-name--value">{item.name}</div>
+              <div className="p--desc-name">Description</div>
+              <div className="p--desc-desc">{item.description}</div>
               <div className="p--links">
-                <div className="p--link--item">Tech Stack</div>
+                <div className="p--link--item p--desc-name">Tech Stack</div>
                 <div className="stack-items">
                   <img src={html} alt="" className="stack_item" />
                   <img src={css} alt="" className="stack_item" />

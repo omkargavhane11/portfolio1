@@ -87,7 +87,7 @@ const Contact = () => {
         <div className="c-right">
           <form
             action=""
-            className="c-contact"
+            className={darkMode ? "c-contact-dark" : "c-contact"}
             ref={formRef}
             onSubmit={handleSubmit}
             id="contact_form"
