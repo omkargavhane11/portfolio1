@@ -116,11 +116,11 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <LinkedInIcon />
-              <span>www.linkedin.com/in/omkar77</span>
+              <span>omkar77</span>
             </div>
             <div className="c-info-item">
               <GitHubIcon />
-              <span>https://github.com/omkargavhane11</span>
+              <span>omkargavhane11</span>
             </div>
           </div>
         </div>
