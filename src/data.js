@@ -44,6 +44,14 @@ export const products = [
         name: "social media",
         description: "Post things you want to share with people. Also like and comments on posts you like.",
         stack: [html, css, javascript, react, nodejs, s3]
+    }, {
+        id: "dsfashfhs",
+        img: "https://deliveryb29we.s3.amazonaws.com/c5c0b73ff13c4acf05e12f9a45f8e750f219a6fe86a2c02e2081eedd6d7b3b16",
+        link: "https://myticket77.netlify.app/",
+        github: "https://github.com/omkargavhane11/tweet-frontend",
+        name: "ticket system",
+        description: "Raise ticket for your requirements and doubts, someone will solve your doubt and provide the required resource or any solution required",
+        stack: [html, css, javascript, react, nodejs, s3, socket]
     }
 
 ];

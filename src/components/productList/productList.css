@@ -18,8 +18,15 @@
   font-weight: 600;
 }
 
+.pl-sub-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: darkgray;
+  margin-bottom: 30px;
+}
+
 .pl-desc {
-  margin: 20px 0px;
+  margin-bottom: 30px;
 }
 
 .pl-list {
