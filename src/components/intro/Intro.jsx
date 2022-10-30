@@ -20,6 +20,16 @@ const Intro = () => {
           <div className="i-desc">
             I design and develop services for customers of all sizes.
           </div>
+          {/* <button className="resume_button">
+            My Resume */}
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/16oVjiwh7pIEx47nZmm_MqSxk9DFSft8p/view?usp=share_link"
+            className="resume_button"
+          >
+            My Resume
+          </a>
+          {/* </button> */}
         </div>
       </div>
       <div className="i-right">
