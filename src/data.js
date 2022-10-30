@@ -36,7 +36,15 @@ export const products = [
         name: "Chat application",
         description: "Connect with your friends, family and loved one's by adding their contact number and chat in real time",
         stack: [html, css, javascript, react, nodejs, socket]
-    },
+    }, {
+        id: "vnsvdgdgdfi7syh9879",
+        img: "https://deliveryb29we.s3.amazonaws.com/915599b68030e551262a67fdd0ce9339b469368f73bb5a3df912638345e52303",
+        link: "https://mytweet.netlify.app/",
+        github: "https://github.com/omkargavhane11/tweet-frontend",
+        name: "social media",
+        description: "Post things you want to share with people. Also like and comments on posts you like.",
+        stack: [html, css, javascript, react, nodejs, s3]
+    }
 
 ];
 
