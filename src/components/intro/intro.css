@@ -35,15 +35,15 @@
   font-weight: 600;
 }
 
-.i-title {
+/* .i-title {
   height: 50px;
   overflow: hidden;
-}
+} */
 
-.i-title-wrapper {
+/* .i-title-wrapper {
   height: 100%;
   animation: move 8s ease-in-out infinite alternate;
-}
+} */
 
 @keyframes move {
   25% {
@@ -90,6 +90,7 @@
   padding: 5px;
   width: max-content;
   border-radius: 4px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 480px) {

@@ -97,7 +97,7 @@ const Contact = () => {
     <div className="c">
       <div className="c-bg"></div>
       <div className="c-title">
-        Let's connect so that we could work together.
+        Let's connect to work together.
       </div>
       <div className="c-wrapper">
         <div className="c-left">

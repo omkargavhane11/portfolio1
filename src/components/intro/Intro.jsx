@@ -11,10 +11,10 @@ const Intro = () => {
           <h1 className="i-name">Omkar Gavhane</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">UI/UX Designer</div>
-              <div className="i-title-item">Content Creator</div>
-              <div className="i-title-item">Reader</div>
+              <div className="i-title-item">MERN Stack Web Developer</div>
+              {/* <div className="i-title-item">ReactJS Developer</div>
+              <div className="i-title-item">NodeJS Developer</div>
+              <div className="i-title-item">Reader</div> */}
             </div>
           </div>
           <div className="i-desc">
@@ -27,14 +27,14 @@ const Intro = () => {
             href="https://drive.google.com/file/d/16oVjiwh7pIEx47nZmm_MqSxk9DFSft8p/view?usp=share_link"
             className="resume_button"
           >
-            My Resume
+            My Resume ⬇
           </a>
           {/* </button> */}
         </div>
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        <img src={Pic} alt="" className="i-img" />
+        {/* <img src={Pic} alt="" className="i-img" /> */}
       </div>
     </div>
   );

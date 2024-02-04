@@ -2,6 +2,7 @@ import "./about.css";
 import red from "../../images/red.png";
 import formal from "../../images/formal.png";
 import dp_bg from "../../images/dp_1.png";
+import office_pic from "../../images/office_pic.jpg";
 // import html from "../../images/html_logo.png";
 // import css from "../../images/css_logo.jfif";
 // import javascript from "../../images/js_logo.png";
@@ -31,7 +32,7 @@ const About = () => {
       <div className="a-left">
         <div className="a-card">
           <div className="a-card bg"></div>
-          <img src={dp_bg} alt="" className="a-img" />
+          <img src={office_pic} alt="" className="a-img" />
         </div>
       </div>
       <div className="a-right">
