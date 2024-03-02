@@ -1,18 +1,5 @@
 import "./about.css";
-import red from "../../images/red.png";
-import formal from "../../images/formal.png";
-import dp_bg from "../../images/dp_1.png";
-import office_pic from "../../images/office_pic.jpg";
-// import html from "../../images/html_logo.png";
-// import css from "../../images/css_logo.jfif";
-// import javascript from "../../images/js_logo.png";
-// import react from "../../images/react_logo.jpg";
-// import { redux } from "../../images";
-// import bootstrap from "../../images/bootstrap_logo.jpg";
-// import mui from "../../images/mui_logo.png";
-// import socket from "../../images/socket.png";
-// import nodejs from "../../images/nodejs.png";
-import s3 from "../../images/aws-s3_logo.png";
+import s3 from "../../images/aws-s3-logo.png";
 
 import {
   html,
@@ -24,20 +11,22 @@ import {
   redux,
   bootstrap,
   mui,
+  mongodb,
+  firebase
 } from "../../data.js";
 
 const About = () => {
   return (
     <div className="a">
-      <div className="a-left">
+      {/* <div className="a-left">
         <div className="a-card">
           <div className="a-card bg"></div>
           <img src={office_pic} alt="" className="a-img" />
         </div>
-      </div>
+      </div> */}
       <div className="a-right">
-        <h1 className="a-title">About Me</h1>
-        <p className="sub">
+        <h1 className="a-title">Skills</h1>
+        {/* <p className="sub">
           I have switched my career trajectory from Mechnical Engg. to Full
           Stack Web Developement.
         </p>
@@ -49,22 +38,75 @@ const About = () => {
           overcome that very quickly. I am a passionate person who takes his
           work very seriously. I am someone who tries to build the trust about
           my skill through delivering the quality work.
-        </p>
+        </p> */}
         <div className="techstack">
-          <h1 className="techstack_heading">
+          {/* <h1 className="techstack_heading">
             Knowledge of Languages,Technologies and Frameworks
-          </h1>
+          </h1> */}
           <div className="tech_items">
-            <img src={html} alt="" className="tech_item" />
-            <img src={css} alt="" className="tech_item" />
-            <img src={javascript} alt="" className="tech_item" />
-            <img src={react} alt="" className="tech_item" />
-            <img src={redux} alt="" className="tech_item" />
-            <img src={bootstrap} alt="" className="tech_item" />
-            <img src={mui} alt="" className="tech_item" />
-            <img src={s3} alt="" className="tech_item" />
-            <img src={socket} alt="" className="tech_item" />
-            <img src={nodejs} alt="" className="tech_item" />
+            <div className="tect_item_container">
+              {" "}
+              <img src={html} alt="" className="tech_item" />
+              <div>HTML</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={css} alt="" className="tech_item" />
+              <div>CSS</div>
+            </div>
+            <div className="tect_item_container">
+              <img src={javascript} alt="" className="tech_item" />
+              <div>JAVASCRIPT</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={react} alt="" className="tech_item" />
+              <div>REACT</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={react} alt="" className="tech_item" />
+              <div>REACT NATIVE</div>
+            </div>
+            <div className="tect_item_container">
+              <img src={redux} alt="" className="tech_item" />
+              <div>REDUX</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={bootstrap} alt="" className="tech_item" />
+              <div>BOOTSTRAP</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={mui} alt="" className="tech_item" />
+              <div>MUI</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={s3} alt="" className="tech_item" />
+              <div>AWS S3</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={socket} alt="" className="tech_item" />
+              <div>SOCKET</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={nodejs} alt="" className="tech_item" />
+              <div>NODE JS</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={mongodb} alt="" className="tech_item" />
+              <div>MONGO DB</div>
+            </div>
+            <div className="tect_item_container">
+              {" "}
+              <img src={firebase} alt="" className="tech_item" />
+              <div>FIREBASE</div>
+            </div>
           </div>
         </div>
       </div>

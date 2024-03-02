@@ -1,6 +1,4 @@
 import "./intro.css";
-import Pic from "../../images/dp_omkar.png";
-import dp_bg from "../../images/dp_1.png";
 
 const Intro = () => {
   return (
@@ -24,10 +22,10 @@ const Intro = () => {
             My Resume */}
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/16oVjiwh7pIEx47nZmm_MqSxk9DFSft8p/view?usp=share_link"
+            href="https://drive.google.com/file/d/1b6TJLkh8GTm793AvNFKR2bMzPInDk1GR/view"
             className="resume_button"
           >
-            My Resume ⬇
+            Resume
           </a>
           {/* </button> */}
         </div>

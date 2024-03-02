@@ -13,14 +13,14 @@ const Product = ({ item }) => {
     <div className={darkMode ? "p dark" : "p"}>
       <div className="p-top"></div>
       <div className="p-bottom">
-        <div className="p-project">
-          {/* <div className="p-browser">
+        {/* <div className="p-project">
+          <div className="p-browser">
             <div className="p-circle"></div>
             <div className="p-circle"></div>
             <div className="p-circle"></div>
-          </div> */}
+          </div>
           <img src={item.img} alt="" className="p-img" />
-        </div>
+        </div> */}
         <div className="p--detail">
           <div className="p--detail--wrapper">
             <div className="p--desc-name">Project type</div>
